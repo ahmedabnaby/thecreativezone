@@ -1,0 +1,27 @@
+/*==================================================================================
+    Custom Stylesheet (Any custom styling you want to apply should be defined here).
+====================================================================================*/
+
+.custom-div
+{
+    position: relative;
+    top: -1260px;
+    left: -25%
+}
+.custom-div-text
+{
+    position: relative;
+    top: -100px;
+}
+@media (max-width: 991.98px) {
+    .display-mobile-none
+    {
+        display: none;
+    }
+    .custom-div-text
+    {
+        position: relative;
+        top: 0;
+    }
+
+}

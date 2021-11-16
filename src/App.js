@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import Preloader from "./includes/Preloader"
+import Navbar from "./includes/Navbar"
+import Homepage from "./components/MainPages/Homepage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <div>
+      <Preloader/>
+      <Navbar/>
+      <Homepage/>
+      {/* back to top */}
+      <div className="back-to-top">
+        <a href="#">
+          <div className="back-toop-tooltip"><span>Back To Top</span></div>
+          <div className="top-array" />
+          <div className="top-line" />
         </a>
-      </header>
+      </div>
+      {/* back to top */}
+
     </div>
   );
 }
